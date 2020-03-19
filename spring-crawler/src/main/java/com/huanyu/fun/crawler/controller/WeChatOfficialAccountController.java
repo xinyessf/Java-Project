@@ -18,7 +18,6 @@ public class WeChatOfficialAccountController {
 
     @PostMapping("/save")
     public void create(@RequestBody WeChatOfficialAccount WeChatOfficialAccount) {
-        System.out.println(123);
         weChatOfficialAccountService.save(WeChatOfficialAccount);
 
     }
