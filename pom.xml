@@ -18,6 +18,7 @@
         <module>spring-boot-common</module>
         <module>spring-crawler</module>
         <module>spring-mysql-mycat</module>
+        <module>base-thread</module>
     </modules>
 
 
@@ -135,6 +136,27 @@
 
         </dependencies>
     </dependencyManagement>
+
+    <profiles>
+        <profile>
+            <id>test</id>
+            <properties>
+                <log.level>debug</log.level>
+                <log.dir>/data/logs</log.dir>
+                <web.name>ROOT</web.name>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <log.level>info</log.level>
+                <log.dir>/data/logs</log.dir>
+            </properties>
+        </profile>
+    </profiles>
     <build>
         <!-- 定制打包的包名 -->
         <finalName>${project.artifactId}</finalName>
@@ -212,7 +234,9 @@
                                 <goal>add-source</goal>
                             </goals>
                             <configuration>
+                                <sources>
 
+                                </sources>
                             </configuration>
                         </execution>
                     </executions>
@@ -221,5 +245,4 @@
 
         </pluginManagement>
     </build>
-
 </project>
