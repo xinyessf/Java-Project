@@ -24,8 +24,6 @@ class ThreadTrain6 implements Runnable {
 			}
 		}
 	}
-
-
 	public synchronized void sale() {
 		synchronized (mutex) {
 			if (trainCount > 0) {
@@ -40,11 +38,8 @@ class ThreadTrain6 implements Runnable {
 		}
 	}
 }
-
 public class DeadlockThread {
-
 	public static void main(String[] args) throws InterruptedException {
-
 		ThreadTrain6 threadTrain = new ThreadTrain6(); // 定义 一个实例
 		Thread thread1 = new Thread(threadTrain, "一号窗口");
 		Thread thread2 = new Thread(threadTrain, "二号窗口");
