@@ -21,9 +21,12 @@
         <module>base-thread</module>
         <module>spring-mybatis</module>
         <module>spring-redis</module>
+        <module>spring-activemq</module>
+        <module>spring-zookeeper</module>
+        <module>spring-dubbo-soa</module>
+        <module>base-jvm</module>
+        <module>base-collection</module>
     </modules>
-
-
     <!-- ========================包版本管理================================= -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
