@@ -8,6 +8,17 @@ import java.util.regex.Pattern;
  * @create: 2019-12-15 10:59
  **/
 public class NumberValidateUtil {
+    public static void main(String[] args) {
+        format();
+
+    }
+    public static void format(){
+        String format = String.format("%02d", 1);
+        System.out.println(format);
+        System.out.println(Integer.valueOf(format)+1);
+
+    }
+
     /**
      * 验证数字输入
      */
