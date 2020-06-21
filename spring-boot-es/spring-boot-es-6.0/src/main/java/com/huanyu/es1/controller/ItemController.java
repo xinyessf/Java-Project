@@ -1,9 +1,7 @@
-package com.huanyu.fun.es.controller;
+package com.huanyu.es1.controller;
 
 import com.google.common.collect.Lists;
 import com.huanyu.fun.common.api.CommonResult;
-import com.huanyu.fun.es.dao.ItemEsDao;
-import com.huanyu.fun.es.entity.Item;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.MatchQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
@@ -15,16 +13,16 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.data.elasticsearch.core.aggregation.AggregatedPage;
 import org.springframework.data.elasticsearch.core.query.FetchSourceFilter;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
+import com.huanyu.es1.dao.ItemEsDao;
+import com.huanyu.es1.entity.Item;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 

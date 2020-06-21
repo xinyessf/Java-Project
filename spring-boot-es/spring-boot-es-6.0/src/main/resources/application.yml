@@ -6,7 +6,7 @@ spring:
     ####集群名称
      cluster-name: myes
     ####地址
-     cluster-nodes: 192.168.73.132:9300
+     cluster-nodes: 192.168.73.134:9300
   freemarker:
       # 设置模板后缀名
       suffix: .ftl

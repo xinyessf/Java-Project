@@ -1,4 +1,4 @@
-package com.huanyu.fun.es.entity;
+package com.huanyu.es1.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

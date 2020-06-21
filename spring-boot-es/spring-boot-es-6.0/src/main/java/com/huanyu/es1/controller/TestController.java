@@ -1,20 +1,11 @@
-package com.huanyu.fun.es.controller;
+package com.huanyu.es1.controller;
 
-import com.google.common.collect.Lists;
-import com.huanyu.fun.es.dao.ItemEsDao;
-import com.huanyu.fun.es.entity.Item;
-import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.MatchQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
+import com.huanyu.es1.dao.ItemEsDao;
+import com.huanyu.es1.entity.Item;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
-import org.springframework.data.web.PageableDefault;
-import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author: sunsf
