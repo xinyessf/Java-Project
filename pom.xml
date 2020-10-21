@@ -26,6 +26,7 @@
         <module>spring-dubbo-soa</module>
         <module>base-jvm</module>
         <module>base-collection</module>
+        <module>base-common</module>
     </modules>
     <!-- ========================包版本管理================================= -->
     <properties>
