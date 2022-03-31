@@ -36,7 +36,7 @@
         <skipTests>true</skipTests>
         <docker.host>http://192.168.3.101:2375</docker.host>
         <docker.maven.plugin.version>1.1.0</docker.maven.plugin.version>
-        <spring.boot.version>2.0.2.RELEASE</spring.boot.version>
+        <spring.boot.version>2.5.12</spring.boot.version>
         <pagehelper-starter.version>1.2.10</pagehelper-starter.version>
         <druid.version>1.1.10</druid.version>
         <hutool.version>4.5.7</hutool.version>
